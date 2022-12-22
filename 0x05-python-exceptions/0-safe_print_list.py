@@ -6,7 +6,8 @@ def safe_print_list(my_list=[], x=10):
         try:
             print(my_list[i], end="")
         except Exception:
-            length = i - 1
+            length = i
+            break
 
     print("")
     return length
